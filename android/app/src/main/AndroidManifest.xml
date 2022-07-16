@@ -2,7 +2,7 @@
     package="com.example.flutter_application_sibpakorn">
    <application
         android:label="flutter_application_sibpakorn"
-        android:name="${sibpakorn_flutter}"
+        android:name="${sibpakorn_flutterapp}"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
