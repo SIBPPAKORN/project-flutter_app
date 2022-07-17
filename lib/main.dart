@@ -1,19 +1,22 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  var app = runApp(app);
+  runApp(sibpakornapp());
 }
 
+//สร้างwidget
 class sibpakornapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    returnMaterialApp(
+    return MaterialApp(
       title: "sibpakorn app",
       home: Scaffold(
         appBar: AppBar(
           title: Text("hello flutter นะจ้ะ"),
         ),
-        body: Text("สวัสดีครับขอต้อนรับเข้าสู้เเอปดีๆไม่มีไม่ได้เเล้ว"),
+        body: Center(
+          child: Text("สวัสดีครับขอต้อนรับสู่เเอปดีๆไม่มีไม่ได้เเล้ว"),
+        ),
       ),
       theme: ThemeData(primarySwatch: Colors.teal),
     );
