@@ -15,8 +15,10 @@ class sibpakornapp extends StatelessWidget {
           title: Text("hello flutter นะจ้ะ"),
         ),
         body: Center(
-          child: Text("สวัสดีครับขอต้อนรับสู่เเอปดีๆไม่มีไม่ได้เเล้ว",
-              style: TextStyle(fontSize: 30, color: Colors.pink)),
+          child: Image(
+            image: NetworkImage(
+                "https://cdn.pixabay.com/photo/2019/05/16/18/16/musician-4207759__340.png"),
+          ),
         ),
       ),
       theme: ThemeData(primarySwatch: Colors.purple),
