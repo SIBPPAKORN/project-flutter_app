@@ -22,6 +22,8 @@ class myhomesibpakorn extends StatefulWidget {
 }
 
 class _myhomesibpakornState extends State<myhomesibpakorn> {
+  int number = 0; //การสร้าง state
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,9 +34,11 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("สวัสดีครับขอต้อนรับแอปดีๆไม่มีไม่ได้เเล้ว"),
-            Text("hello flutter"),
-            Text("hellodart"),
+            Text("กดปุ่มเพื่อเพิ่มจำนวนตัวเลข"),
+            Text(
+              number.toString(),
+              style: TextStyle(fontSize: 60),
+            ),
           ],
         ),
       ),
