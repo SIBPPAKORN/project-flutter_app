@@ -9,6 +9,7 @@ void main() {
       ),
       body: Text("สวัสดีครับขอต้อนรับเข้าสู้เเอปดีๆไม่มีไม่ได้เเล้ว"),
     ),
+    theme: ThemeData(primarySwatch: Colors.teal),
   );
   runApp(app);
 }
