@@ -43,8 +43,12 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        child: Text("เพิ่ม"),
+        onPressed: () {
+          setState(() {
+            number++;
+          });
+        },
+        child: Icon(Icons.ac_unit),
       ),
     );
   }
