@@ -16,6 +16,7 @@ class sibpakornapp extends StatelessWidget {
         ),
         body: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text("สวัสดีครับขอต้อนรับแอปดีๆไม่มีไม่ได้เเล้ว"),
               Text("hello flutter"),
