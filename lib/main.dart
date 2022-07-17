@@ -28,7 +28,7 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("hello flutter นะจ้ะ"),
+        title: Text("โปรเเกรมนับเลขนะจ้ะ"),
       ),
       body: Center(
         child: Column(
@@ -41,6 +41,10 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
             ),
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        child: Text("เพิ่ม"),
       ),
     );
   }
