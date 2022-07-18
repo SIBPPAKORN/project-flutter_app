@@ -24,34 +24,28 @@ class myhomesibpakorn extends StatefulWidget {
 class _myhomesibpakornState extends State<myhomesibpakorn> {
   int number = 0; //การสร้าง state
 
+//เเสดงผลข้อมูล
   @override
   Widget build(BuildContext context) {
-    //กลุ่มข้อมูล text widget
-    List<Widget> data = [];
-    for (var i = 0; i < 10; i++) {
-      data.add(Text("รายการที่ ${i + 1}"));
-    }
-
     return Scaffold(
       appBar: AppBar(
         title: Text("โปรเเกรมนับเลขนะจ้ะ"),
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: data,
+        child: ListView(
+          children: getdata(15),
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: addnumber,
-        child: Icon(Icons.ac_unit),
       ),
     );
   }
 
-  void addnumber() {
-    setState(() {
-      number++;
-    });
+//เตรียมข้อมูล
+  List<Widget> getdata(int count) {
+    //กลุ่มข้อมูล text widget
+    List<Widget> data = [];
+    for (var i = 0; i < count; i++) {
+      data.add(Text("รายการที่ ${i + 1}"));
+    }
+    return data;
   }
 }
