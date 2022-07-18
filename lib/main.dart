@@ -33,7 +33,7 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
       ),
       body: Center(
         child: ListView(
-          children: getdata(20),
+          children: getdata(15),
         ),
       ),
     );
