@@ -27,11 +27,10 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
   @override
   Widget build(BuildContext context) {
     List<Widget> data = [];
-    data.add(Text("กดปุ่มเพื่อเพิ่มจำนวนตัวเลข"));
-    data.add(Text(
-      number.toString(),
-      style: TextStyle(fontSize: 60),
-    ));
+    for (var i = 0; i < 10; i++) {
+      data.add(Text("รายการที่ $i"));
+    }
+
     return Scaffold(
       appBar: AppBar(
         title: Text("โปรเเกรมนับเลขนะจ้ะ"),
