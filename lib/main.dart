@@ -26,9 +26,10 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
 
   @override
   Widget build(BuildContext context) {
+    //กลุ่มข้อมูล text widget
     List<Widget> data = [];
     for (var i = 0; i < 10; i++) {
-      data.add(Text("รายการที่ $i"));
+      data.add(Text("รายการที่ ${i + 1}"));
     }
 
     return Scaffold(
