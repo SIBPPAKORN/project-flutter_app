@@ -26,6 +26,12 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
 
   @override
   Widget build(BuildContext context) {
+    List<Widget> data = [];
+    data.add(Text("กดปุ่มเพื่อเพิ่มจำนวนตัวเลข"));
+    data.add(Text(
+      number.toString(),
+      style: TextStyle(fontSize: 60),
+    ));
     return Scaffold(
       appBar: AppBar(
         title: Text("โปรเเกรมนับเลขนะจ้ะ"),
@@ -33,13 +39,7 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text("กดปุ่มเพื่อเพิ่มจำนวนตัวเลข"),
-            Text(
-              number.toString(),
-              style: TextStyle(fontSize: 60),
-            ),
-          ],
+          children: data,
         ),
       ),
       floatingActionButton: FloatingActionButton(
