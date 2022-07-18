@@ -29,7 +29,7 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("โปรเเกรมนับเลขนะจ้ะ"),
+        title: Text("เลือกเมนู"),
       ),
       body: Center(
         child: ListView(
@@ -44,10 +44,10 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
     //กลุ่มข้อมูล text widget
     List<Widget> data = [];
     for (var i = 0; i < count; i++) {
-      data.add(Text(
-        "รายการที่ ${i + 1}",
-        style: TextStyle(fontSize: 30),
-      ));
+      var menu = ListTile(
+        title: Text("เมนูที่ ${i + 1}"),
+      );
+      data.add(menu);
     }
     return data;
   }
