@@ -33,7 +33,7 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
       ),
       body: Center(
         child: ListView(
-          children: getdata(15),
+          children: getdata(10),
         ),
       ),
     );
@@ -44,7 +44,10 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
     //กลุ่มข้อมูล text widget
     List<Widget> data = [];
     for (var i = 0; i < count; i++) {
-      data.add(Text("รายการที่ ${i + 1}"));
+      data.add(Text(
+        "รายการที่ ${i + 1}",
+        style: TextStyle(fontSize: 30),
+      ));
     }
     return data;
   }
