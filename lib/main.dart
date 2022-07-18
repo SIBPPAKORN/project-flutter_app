@@ -33,7 +33,7 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
       ),
       body: Center(
         child: ListView(
-          children: getdata(10),
+          children: getdata(20),
         ),
       ),
     );
@@ -45,7 +45,10 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
     List<Widget> data = [];
     for (var i = 0; i < count; i++) {
       var menu = ListTile(
-        title: Text("เมนูที่ ${i + 1}"),
+        title: Text(
+          "เมนูที่ ${i + 1}",
+          style: TextStyle(fontSize: 25),
+        ),
         subtitle: Text("หัวข้อย่อยที่ ${i + 1}"),
       );
       data.add(menu);
