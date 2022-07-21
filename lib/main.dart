@@ -25,10 +25,9 @@ class myhomesibpakorn extends StatefulWidget {
 class _myhomesibpakornState extends State<myhomesibpakorn> {
 //กลุ่มข้อมูล
   List<foodmenu> menu = [
-    foodmenu("หมึกย่าง","100")
-    foodmenu("ข้าว","10"),
-    foodmenu("ผัดผัก","40"),
-
+    foodmenu("หมึกย่าง", "100"),
+    foodmenu("ข้าว", "10"),
+    foodmenu("ผัดผัก", "40"),
   ];
 
 //เเสดงผลข้อมูล
@@ -41,8 +40,13 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
         body: ListView.builder(
             itemCount: menu.length,
             itemBuilder: (BuildContext context, int index) {
+              foodmenu food = menu[index];
               return ListTile(
-                title: Text("เมนูที่ ${index + 1}"),
+                title: Text(
+                  food.name,
+                  style: TextStyle(fontSize: 30),
+                ),
+                subtitle: Text("ราคา" + food.price + "บาท"),
               );
             }));
   }
