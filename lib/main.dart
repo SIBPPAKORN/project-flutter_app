@@ -25,10 +25,10 @@ class myhomesibpakorn extends StatefulWidget {
 class _myhomesibpakornState extends State<myhomesibpakorn> {
 //กลุ่มข้อมูล
   List<equipmentmenu> menu = [
-    equipmentmenu("มีด", "100000"),
-    equipmentmenu("ขวาน", "1050000"),
-    equipmentmenu("เลื่อยตัดไม้", "405600"),
-    equipmentmenu("เลื่อยตัดเหล็ก", "1500000"),
+    equipmentmenu("มีด", "100000", "assets/images/picture1.jpg"),
+    equipmentmenu("ขวาน", "1050000", "assets/images/picture4.jpg"),
+    equipmentmenu("เลื่อยตัดไม้", "405600", "assets/images/picture2.jpg"),
+    equipmentmenu("เลื่อยตัดเหล็ก", "1500000", "assets/images/picture3.jpg"),
   ];
 
 //เเสดงผลข้อมูล

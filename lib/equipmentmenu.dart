@@ -1,6 +1,6 @@
 class equipmentmenu {
   String name;
   String price;
-
-  equipmentmenu(this.name, this.price);
+  String img;
+  equipmentmenu(this.name, this.price, this.img);
 }
