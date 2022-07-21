@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'foodmenu.dart';
+import 'equipmentmenu.dart';
 
 void main() {
   runApp(sibpakornapp());
@@ -24,10 +24,11 @@ class myhomesibpakorn extends StatefulWidget {
 
 class _myhomesibpakornState extends State<myhomesibpakorn> {
 //กลุ่มข้อมูล
-  List<foodmenu> menu = [
-    foodmenu("หมึกย่าง", "100"),
-    foodmenu("ข้าว", "10"),
-    foodmenu("ผัดผัก", "40"),
+  List<equipmentmenu> menu = [
+    equipmentmenu("มีด", "100000"),
+    equipmentmenu("ขวาน", "1050000"),
+    equipmentmenu("เลื่อยตัดไม้", "405600"),
+    equipmentmenu("เลื่อยตัดเหล็ก", "1500000"),
   ];
 
 //เเสดงผลข้อมูล
@@ -40,13 +41,13 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
         body: ListView.builder(
             itemCount: menu.length,
             itemBuilder: (BuildContext context, int index) {
-              foodmenu food = menu[index];
+              equipmentmenu equipment = menu[index];
               return ListTile(
                 title: Text(
-                  food.name,
+                  equipment.name,
                   style: TextStyle(fontSize: 30),
                 ),
-                subtitle: Text("ราคา" + food.price + "บาท"),
+                subtitle: Text("ราคา" + equipment.price + "บาท"),
               );
             }));
   }
