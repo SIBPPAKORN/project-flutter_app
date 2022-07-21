@@ -31,10 +31,12 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
         appBar: AppBar(
           title: Text("เลือกเมนู"),
         ),
-        body: ListView.builder(itemBuilder: (BuildContext context, int index) {
-          return ListTile(
-            title: Text("เมนูที่ $index"),
-          );
-        }));
+        body: ListView.builder(
+            itemCount: 15,
+            itemBuilder: (BuildContext context, int index) {
+              return ListTile(
+                title: Text("เมนูที่ ${index + 1}"),
+              );
+            }));
   }
 }
