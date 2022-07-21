@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'foodmenu.dart';
 
 void main() {
   runApp(sibpakornapp());
@@ -22,17 +23,23 @@ class myhomesibpakorn extends StatefulWidget {
 }
 
 class _myhomesibpakornState extends State<myhomesibpakorn> {
-  int number = 0; //การสร้าง state
+//กลุ่มข้อมูล
+  List<foodmenu> menu = [
+    foodmenu("หมึกย่าง","100")
+    foodmenu("ข้าว","10"),
+    foodmenu("ผัดผัก","40"),
+
+  ];
 
 //เเสดงผลข้อมูล
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("เลือกเมนู"),
+          title: Text("เลือกอุปกรณ์"),
         ),
         body: ListView.builder(
-            itemCount: 15,
+            itemCount: menu.length,
             itemBuilder: (BuildContext context, int index) {
               return ListTile(
                 title: Text("เมนูที่ ${index + 1}"),
