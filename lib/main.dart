@@ -43,6 +43,7 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
             itemBuilder: (BuildContext context, int index) {
               equipmentmenu equipment = menu[index];
               return ListTile(
+                leading: Image.asset(equipment.img),
                 title: Text(
                   equipment.name,
                   style: TextStyle(fontSize: 30),
