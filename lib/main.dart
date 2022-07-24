@@ -49,6 +49,9 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
                   style: TextStyle(fontSize: 30),
                 ),
                 subtitle: Text("ราคา" + equipment.price + "บาท"),
+                onTap: () {
+                  print("คุณเลือกอุปกรณ์ชื่อว่า" + equipment.name);
+                },
               );
             }));
   }
