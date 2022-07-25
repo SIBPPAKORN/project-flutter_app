@@ -1,7 +1,5 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
-import 'equipmentmenu.dart';
+import 'moneyBox.dart';
 
 void main() {
   runApp(sibpakornapp());
@@ -40,93 +38,19 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
           padding: const EdgeInsets.all(8.0),
           child: Column(
             children: [
-              Container(
-                padding: const EdgeInsets.all(10.0),
-                decoration: BoxDecoration(
-                    color: Colors.grey,
-                    borderRadius: BorderRadius.circular(25)),
-                height: 130,
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text(
-                      "ยอดคงเหลือ",
-                      style: TextStyle(
-                          fontSize: 25,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold),
-                    ),
-                    Expanded(
-                      child: Text(
-                        "1000000",
-                        style: TextStyle(
-                            fontSize: 25,
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold),
-                        textAlign: TextAlign.right,
-                      ),
-                    )
-                  ],
-                ),
+              moneybox("ยอดคงเหลือ", 1000000, Colors.orange, 130),
+              SizedBox(
+                height: 5,
               ),
-              Container(
-                padding: const EdgeInsets.all(10.0),
-                decoration: BoxDecoration(
-                    color: Colors.orange,
-                    borderRadius: BorderRadius.circular(25)),
-                height: 130,
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text(
-                      "รายรับ",
-                      style: TextStyle(
-                          fontSize: 25,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold),
-                    ),
-                    Expanded(
-                      child: Text(
-                        "500000",
-                        style: TextStyle(
-                            fontSize: 25,
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold),
-                        textAlign: TextAlign.right,
-                      ),
-                    )
-                  ],
-                ),
+              moneybox("รายรับ", 600000, Colors.pink, 130),
+              SizedBox(
+                height: 5,
               ),
-              Container(
-                padding: const EdgeInsets.all(10.0),
-                decoration: BoxDecoration(
-                    color: Colors.pink,
-                    borderRadius: BorderRadius.circular(25)),
-                height: 130,
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  children: [
-                    Text(
-                      "รายจ่าย",
-                      style: TextStyle(
-                          fontSize: 25,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold),
-                    ),
-                    Expanded(
-                      child: Text(
-                        "400000",
-                        style: TextStyle(
-                            fontSize: 25,
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold),
-                        textAlign: TextAlign.right,
-                      ),
-                    )
-                  ],
-                ),
+              moneybox("รายจ่าย", 99, Colors.red, 130),
+              SizedBox(
+                height: 5,
               ),
+              moneybox("ยอดค้างชำระ", 0.1, Colors.blue, 130),
             ],
           ),
         ));
