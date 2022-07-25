@@ -12,7 +12,7 @@ class sibpakornapp extends StatelessWidget {
     return MaterialApp(
       title: "sibpakorn app",
       home: myhomesibpakorn(),
-      theme: ThemeData(primarySwatch: Colors.purple),
+      theme: ThemeData(primarySwatch: Colors.yellow),
     );
   }
 }
@@ -28,10 +28,15 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("เลือกอุปกรณ์"),
+          title: Text("บัญชีของผม"),
         ),
         body: Column(
-          children: [],
+          children: [
+            Container(
+              decoration: BoxDecoration(color: Colors.green),
+              height: 55,
+            )
+          ],
         ));
   }
 }
