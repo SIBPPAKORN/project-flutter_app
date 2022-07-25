@@ -1,5 +1,7 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
-import 'moneyBox.dart';
+import 'package:http/http.dart' as http;
 
 void main() {
   runApp(sibpakornapp());
@@ -23,36 +25,33 @@ class myhomesibpakorn extends StatefulWidget {
 }
 
 class _myhomesibpakornState extends State<myhomesibpakorn> {
-//เเสดงผลข้อมูล
+  int number = 0;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    getexchangerate();
+  }
+
+  Future<void> getexchangerate() async {
+    var url = "https://api.exchangeratesapi.io/latest?symbols=USD,THB";
+    var response = await http.get(url);
+    print(response.body);
+  }
+
   @override
   Widget build(BuildContext context) {
+    print("เรียกใช้งาน build");
     return Scaffold(
-        appBar: AppBar(
-          title: Text(
-            "บัญชีของผม",
-            style: TextStyle(
-                fontSize: 25, color: Colors.black, fontWeight: FontWeight.bold),
-          ),
+      appBar: AppBar(
+        title: Text(
+          "อัตราการเเลกเปลี่ยนสกุลเงิน",
+          style: TextStyle(
+              fontSize: 25, color: Colors.black, fontWeight: FontWeight.bold),
         ),
-        body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Column(
-            children: [
-              moneybox("ยอดคงเหลือ", 1000000, Colors.orange, 130),
-              SizedBox(
-                height: 5,
-              ),
-              moneybox("รายรับ", 600000, Colors.pink, 110),
-              SizedBox(
-                height: 5,
-              ),
-              moneybox("รายจ่าย", 99, Colors.red, 110),
-              SizedBox(
-                height: 5,
-              ),
-              moneybox("ยอดค้างชำระ", 0.1, Colors.blue, 110),
-            ],
-          ),
-        ));
+      ),
+      body: Column(children: []),
+    );
   }
 }
