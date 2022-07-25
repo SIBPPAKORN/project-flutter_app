@@ -42,15 +42,15 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
               SizedBox(
                 height: 5,
               ),
-              moneybox("รายรับ", 600000, Colors.pink, 130),
+              moneybox("รายรับ", 600000, Colors.pink, 110),
               SizedBox(
                 height: 5,
               ),
-              moneybox("รายจ่าย", 99, Colors.red, 130),
+              moneybox("รายจ่าย", 99, Colors.red, 110),
               SizedBox(
                 height: 5,
               ),
-              moneybox("ยอดค้างชำระ", 0.1, Colors.blue, 130),
+              moneybox("ยอดค้างชำระ", 0.1, Colors.blue, 110),
             ],
           ),
         ));
