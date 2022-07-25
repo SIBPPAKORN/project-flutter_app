@@ -56,12 +56,73 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
                           color: Colors.black,
                           fontWeight: FontWeight.bold),
                     ),
+                    Expanded(
+                      child: Text(
+                        "1000000",
+                        style: TextStyle(
+                            fontSize: 25,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.right,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(10.0),
+                decoration: BoxDecoration(
+                    color: Colors.orange,
+                    borderRadius: BorderRadius.circular(25)),
+                height: 130,
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
                     Text(
-                      "1530000",
+                      "รายรับ",
                       style: TextStyle(
                           fontSize: 25,
                           color: Colors.black,
                           fontWeight: FontWeight.bold),
+                    ),
+                    Expanded(
+                      child: Text(
+                        "500000",
+                        style: TextStyle(
+                            fontSize: 25,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.right,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Container(
+                padding: const EdgeInsets.all(10.0),
+                decoration: BoxDecoration(
+                    color: Colors.pink,
+                    borderRadius: BorderRadius.circular(25)),
+                height: 130,
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  children: [
+                    Text(
+                      "รายจ่าย",
+                      style: TextStyle(
+                          fontSize: 25,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    Expanded(
+                      child: Text(
+                        "400000",
+                        style: TextStyle(
+                            fontSize: 25,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold),
+                        textAlign: TextAlign.right,
+                      ),
                     )
                   ],
                 ),
