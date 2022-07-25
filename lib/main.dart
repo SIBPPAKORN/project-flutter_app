@@ -30,7 +30,11 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("บัญชีของผม"),
+          title: Text(
+            "บัญชีของผม",
+            style: TextStyle(
+                fontSize: 25, color: Colors.black, fontWeight: FontWeight.bold),
+          ),
         ),
         body: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -39,24 +43,52 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
               Container(
                 padding: const EdgeInsets.all(10.0),
                 decoration: BoxDecoration(
-                    color: Colors.green,
-                    borderRadius: BorderRadius.circular(30)),
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.circular(25)),
                 height: 130,
                 child: Row(
-                  children: [Text("ยอดคงเหลือ"), Text("1530000")],
+                  children: [
+                    Text(
+                      "ยอดคงเหลือ",
+                      style: TextStyle(
+                          fontSize: 25,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      "1530000",
+                      style: TextStyle(
+                          fontSize: 25,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold),
+                    )
+                  ],
                 ),
               ),
               Container(
+                padding: const EdgeInsets.all(10.0),
                 decoration: BoxDecoration(
-                    color: Colors.grey,
-                    borderRadius: BorderRadius.circular(30)),
+                    color: Colors.green,
+                    borderRadius: BorderRadius.circular(25)),
                 height: 130,
-              ),
-              Container(
-                decoration: BoxDecoration(
-                    color: Colors.indigo,
-                    borderRadius: BorderRadius.circular(30)),
-                height: 130,
+                child: Row(
+                  children: [
+                    Text(
+                      "รายรับ",
+                      style: TextStyle(
+                          fontSize: 25,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      "1530000",
+                      style: TextStyle(
+                          fontSize: 25,
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold),
+                    )
+                  ],
+                ),
               )
             ],
           ),
