@@ -47,6 +47,7 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
                     borderRadius: BorderRadius.circular(25)),
                 height: 130,
                 child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Text(
                       "ยอดคงเหลือ",
@@ -65,31 +66,6 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
                   ],
                 ),
               ),
-              Container(
-                padding: const EdgeInsets.all(10.0),
-                decoration: BoxDecoration(
-                    color: Colors.green,
-                    borderRadius: BorderRadius.circular(25)),
-                height: 130,
-                child: Row(
-                  children: [
-                    Text(
-                      "รายรับ",
-                      style: TextStyle(
-                          fontSize: 25,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold),
-                    ),
-                    Text(
-                      "1530000",
-                      style: TextStyle(
-                          fontSize: 25,
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold),
-                    )
-                  ],
-                ),
-              )
             ],
           ),
         ));
