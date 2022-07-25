@@ -33,8 +33,20 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
         body: Column(
           children: [
             Container(
-              decoration: BoxDecoration(color: Colors.green),
-              height: 55,
+              decoration: BoxDecoration(
+                  color: Colors.green, borderRadius: BorderRadius.circular(40)),
+              height: 130,
+            ),
+            Container(
+              decoration: BoxDecoration(
+                  color: Colors.grey, borderRadius: BorderRadius.circular(40)),
+              height: 130,
+            ),
+            Container(
+              decoration: BoxDecoration(
+                  color: Colors.indigo,
+                  borderRadius: BorderRadius.circular(40)),
+              height: 130,
             )
           ],
         ));
