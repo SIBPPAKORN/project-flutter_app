@@ -1,3 +1,5 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'equipmentmenu.dart';
 
@@ -30,25 +32,34 @@ class _myhomesibpakornState extends State<myhomesibpakorn> {
         appBar: AppBar(
           title: Text("บัญชีของผม"),
         ),
-        body: Column(
-          children: [
-            Container(
-              decoration: BoxDecoration(
-                  color: Colors.green, borderRadius: BorderRadius.circular(40)),
-              height: 130,
-            ),
-            Container(
-              decoration: BoxDecoration(
-                  color: Colors.grey, borderRadius: BorderRadius.circular(40)),
-              height: 130,
-            ),
-            Container(
-              decoration: BoxDecoration(
-                  color: Colors.indigo,
-                  borderRadius: BorderRadius.circular(40)),
-              height: 130,
-            )
-          ],
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(10.0),
+                decoration: BoxDecoration(
+                    color: Colors.green,
+                    borderRadius: BorderRadius.circular(30)),
+                height: 130,
+                child: Row(
+                  children: [Text("ยอดคงเหลือ"), Text("1530000")],
+                ),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey,
+                    borderRadius: BorderRadius.circular(30)),
+                height: 130,
+              ),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.indigo,
+                    borderRadius: BorderRadius.circular(30)),
+                height: 130,
+              )
+            ],
+          ),
         ));
   }
 }
